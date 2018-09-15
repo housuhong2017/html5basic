@@ -1,0 +1,29 @@
+#fdset{
+	width: 450px;
+	height: 70px;
+}
+ul,li{ 
+	list-style:none;
+}
+.ln{
+	margin-left:-25px;
+}
+.login{
+	width:400px; 
+	margin:0 auto; 
+	position:relative;}
+.login .on_changes{
+	width:232px; 
+	position:absolute; 
+	list-style:none; 
+	background:#FFF; 
+	border:1px solid #000; 
+	display:none; 	
+}
+.login .on_changes li{
+	margin:8px;
+	padding:4px;
+}
+.login .on_changes li.active{ 
+	background:#CEE7FF;
+}

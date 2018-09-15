@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>个人信息页面</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<style type="text/css"> 
+		ul,li{ 
+			list-style:none;
+			z-index: 99;
+		}
+	</style> 
+	<script type="text/javascript" src="http://www.wufangbo.com/demo/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/inputmail.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(function(){
+			$("#loginName").changeTips({
+			divTip:".on_changes"
+			}); 
+		})
+	</script>
+	<h1>请填写个人信息</h1>
+	<form>
+		<fieldset id="fdset">
+			<legend id="lg">基本信息</legend>
+			姓名
+			<input type="name" placeholder="请输入姓名" required="required"/>
+			<br />
+			年龄
+			<input type="number" min="1" />
+		</fieldset>
+		<br />
+		
+		<fieldset id="fdset">
+			<legend id="lg">你想在哪里收到邮件？</legend>
+			
+			<div class="login">
+			<div class="ln">
+				邮箱
+				<input type="text" maxlength="128" name="loginName" id="loginName" required="required" placeholder="请输入邮箱" />
+			</div>
+				<ul class="on_changes">
+					<li email="@sina.com"></li>
+					<li email="@163.com"></li>
+					<li email="@qq.com"></li>
+					<li email="@hotmail.com"></li>
+					<li email="@126.com"></li>
+					<li email="@gmail.com"></li>
+					<li email="@yahoo.com"></li>
+				</ul>
+			</div>
+		</fieldset>
+	<br />
+		<fieldset id="fdset">
+			<legend id="lg">收入情况</legend>
+			月收入
+			<input type="text" list="include"  placeholder="21k+"/>
+			<br />
+			<datalist id="include">
+				<option value="22K+"></option>
+				<option value="23K+"></option>
+				<option value="24K+"></option>
+				<option value="25K+"></option>
+			</datalist>
+			银行卡
+			<input type="number" />
+			有效期
+			<input type="date" />
+		</fieldset>
+		<br />
+		<fieldset id="fdset">
+			<legend id="lg">选取提交文件</legend>
+			文件
+			<input type="file" />
+		</fieldset>
+		<br />
+		<input type="submit" title="提交" />
+	</form>
+	</body>
+</html>
+
+</body> 
+</html>
