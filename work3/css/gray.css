@@ -1,0 +1,48 @@
+#fdset{
+	width: 500px;
+	height: 170px;
+}
+#style{
+	color: red;
+	font-size: 25px;
+	font-weight: bolder;
+}
+#box{
+	width: 480px;
+	height: 40px;
+	border: 1px solid gray;
+}
+#center{
+	list-style: none;
+	padding: 0px;
+}
+li{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	bottom: 13px;
+	float: left;
+	margin: 5px;
+	cursor: pointer;
+}
+li:hover{
+	top: -15px;
+}
+#bT{
+	background: gray;
+	}
+#bT1{
+	background: mediumpurple;
+}
+#bT2{
+	background: red;
+}
+#bT3{
+	background: deepskyblue;
+}
+#bT4{
+	background: coral;
+}
+#bT5{
+	background: greenyellow;
+}
