@@ -1,0 +1,9 @@
+#box{
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid gray;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
